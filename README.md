@@ -1,2 +1,28 @@
-# my-static-site
-Коллективная разработка приложений
+# Мой статический сайт
+[![Deploy to GitHub Pages](https://github.com/evstigneevv/my-static-site/actions/workflows/deploy.yml/badge.svg)](https://github.com/evstigneevv/my-static-site/actions)
+Современный статический сайт, развернутый на GitHub Pages с использованием
+CI/CD.
+## 🚀 Особенности
+- ✅ Полностью статический
+- ✅ Адаптивный дизайн
+- ✅ Автоматическое развертывание через GitHub Actions
+- ✅ Бесплатный хостинг на GitHub Pages
+## 📁 Структура проекта
+my-static-site/
+├── .github/workflows/ # CI/CD конфигурации
+├── css/ # Стили
+├── js/ # JavaScript
+├── images/ # Изображения
+├── index.html # Главная страница
+├── about.html # Страница "О нас"
+└── _config.yml # Конфигурация GitHub Pages
+## 🛠 Локальная разработка
+1. Клонируйте репозиторий:
+   bash
+   git clone https://github.com/username/my-static-site.git
+2. Откройте `index.html` в браузере или используйте Live Server в VS Code.
+## 🌐 Деплой
+Сайт автоматически деплоится при пуше в ветку `main`.
+**Production URL:** https://evstigneevv.github.io/my-static-site
+## 📝 Лицензия
+MIT License - смотрите файл [LICENSE](LICENSE) для деталей.
