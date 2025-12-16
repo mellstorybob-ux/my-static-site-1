@@ -12,12 +12,11 @@ jobs:
   # Шаг 1: Checkout кода
     - name: Checkout code
       uses: actions/checkout@v4
-  # Шаг 2: Setup Node.js (может пригодиться для более сложных сборок)
     - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
+  uses: actions/setup-node@v4
+  with:
+    node-version: '18'  # ИЛИ используйте: node-version-file: '.nvmrc'
+    cache: 'npm'
   # Шаг 3: Проверка HTML (опционально)
 #    - name: HTML Validation
 #      uses: cyrilletuzi/validate-html@v4
@@ -25,7 +24,7 @@ jobs:
 #        pattern: "**/*.html"
 #        level: warning
   # Шаг 4: Деплой на GitHub Pages
-    - name: Deploy to GitHub Pages
+     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
